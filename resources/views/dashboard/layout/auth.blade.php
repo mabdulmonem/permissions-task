@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="{{ admin_assets('icheck-bootstrap.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ admin_assets("adminlte.css") }}">
+
+
+    @if(is_rtl())
+        <!-- Bootstrap 4 RTL -->
+        <link rel="stylesheet" href="{{ admin_assets("bootstrapRTL.min.css") }}">
+        <link rel="stylesheet" href="{{ admin_assets("custom.css") }}">
+    @endif
+
 </head>
 
 <body class="hold-transition login-page">

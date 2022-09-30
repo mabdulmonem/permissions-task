@@ -7,14 +7,14 @@
             <a href="#" class="h1"><b>Admin</b>LTE</a>
         </div>
         <div class="card-body">
-            <p class="login-box-msg">@lang('Sign in to start your session')</p>
+            <p class="login-box-msg">@lang('app.Sign in to start your session')</p>
 
             <form action="{{ route('login') }}" method="post">
                 @csrf
 
                 <div class="input-group mb-3">
                     <input type="text" class="form-control @error('email') is-invalid @enderror"
-                           placeholder="{{ __('Email Address') }}" required name="email" autocomplete autofocus
+                           placeholder="{{ __('app.Email Address') }}" required name="email" autocomplete autofocus
                            value="{{ old('email') }}">
                     <div class="input-group-append">
                         <div class="input-group-text">
@@ -32,7 +32,7 @@
                 @endif
                 <div class="input-group mb-3">
                     <input type="password" class="form-control @error('password') is-invalid @enderror"
-                           placeholder="{{ __('Password') }}" required name="password" autocomplete="current-password">
+                           placeholder="{{ __('app.Password') }}" required name="password" autocomplete="current-password">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
@@ -49,23 +49,17 @@
                         <div class="icheck-primary">
                             <input type="checkbox" id="remember" name="remember" {{ old('remember') ? 'checked' : '' }}>
                             <label for="remember">
-                                {{ __('Remember Me') }}
+                                {{ __('app.Remember Me') }}
                             </label>
                         </div>
                     </div>
                     <!-- /.col -->
                     <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">{{ __('Login') }}</button>
+                        <button type="submit" class="btn btn-primary btn-block">{{ __('app.Login') }}</button>
                     </div>
                     <!-- /.col -->
                 </div>
             </form>
-
-{{--            @if (Route::has('password.request'))--}}
-{{--                <a class="btn btn-link" href="{{ route('password.request') }}">--}}
-{{--                    {{ __('Forgot Your Password?') }}--}}
-{{--                </a>--}}
-{{--            @endif--}}
         </div>
         <!-- /.card-body -->
     </div>

@@ -25,6 +25,12 @@ return [
     'Actions' => 'Actions',
 
     'Logout' => 'Logout',
+    'Panel' => 'Panel',
+    'Log in' => 'Log in',
+    'Login' => 'Login',
+    'Sign in to start your session' => 'Sign in to start your session',
+    'Remember Me' => 'Remember Me',
+    'Email Address' => 'Email Address',
 
     'Add Permission' => 'Add Permission',
     'Add User' => 'Add User',

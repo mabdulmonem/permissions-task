@@ -25,7 +25,12 @@ return [
     'Actions' => 'الاحداث',
 
     'Logout' => 'تسجيل الخروج',
-
+    'Panel' => 'اللوحة',
+    'Log in' => 'تسجيل الدخول',
+    'Sign in to start your session' => 'تسجيل الدخول لبدء الجلسة الخاصة بك',
+    'Login' => 'دخول',
+    'Remember Me' => 'تذكرنى',
+    'Email Address' => 'البريد الالكترونى',
 
     'Add Permission' => 'أضافة اذن',
     'Add User' => 'اضافة مستخدم',

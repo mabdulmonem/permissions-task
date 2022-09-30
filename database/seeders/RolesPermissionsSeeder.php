@@ -38,7 +38,6 @@ class RolesPermissionsSeeder extends Seeder
         foreach ($perms as $perm_key => $perm) {
             foreach ($cruds as $crud_key => $crud) {
                 Permission::createPermission(ucfirst($crud_key) . " " . ucfirst($perm_key), "$crud_key-$perm_key", "$crud $perm")->roles()->attach(1);
-
             }
         }
 

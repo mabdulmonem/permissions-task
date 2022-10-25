@@ -1,4 +1,5 @@
-    $client = new GuzzleHttp\Client([
+<?php    
+$client = new GuzzleHttp\Client([
         'base_uri' => "http://mora-sa.com/api/v1/"
     ]);
     // $key = "api_key=88acd4567fac2adaec0d64134d1cd5c974ad391d&username=mabdulmonem";
